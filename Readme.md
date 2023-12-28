@@ -1,4 +1,4 @@
-# Django Rest Framework
+# Django Rest Framework Project
 
 API's :
 
