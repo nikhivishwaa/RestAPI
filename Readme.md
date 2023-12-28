@@ -8,12 +8,12 @@ API's :
 `http://127.0.0.1:8000/employees/` - GET the all Employees<br><br>
 `http://127.0.0.1:8000/employees/{id}/` - GET the data of specific Employees<br><br>
 
-`http://127.0.0.1:8000/companies/{id}employees/` - GET the all Employees of specific Company<br><br>
+`http://127.0.0.1:8000/companies/{id}/employees/` - GET the all Employees of specific Company<br><br>
 
 
 # Try this code and make your Contribution
 
-user - `admin`
+user - `admin`<br>
 pswd - `root`
 
 
