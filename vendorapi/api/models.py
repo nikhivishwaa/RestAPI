@@ -8,7 +8,7 @@ class Vendor(models.Model):
     name = models.CharField(max_length=255)
     contact_details = models.TextField()
     address = models.TextField()
-    vendor_code = models.CharField(max_length=10, unique=True, editable=False)
+    vendor_code = models.CharField(max_length=10, unique=True, primary_key=True, editable=False)
     on_time_delivery_rate = models.FloatField(default=0)
     quality_rating_avg = models.FloatField(default=0)
     average_response_time = models.FloatField(default=0)
@@ -45,6 +45,19 @@ class PurchaseOrder(models.Model):
 
     def __str__(self) -> str:
         return f"{self.po_number} - {self.vendor.name}"
+    
+    def save(self, force_insert: bool = ..., force_update: bool = ..., using: str | None = ..., update_fields: Iterable[str] | None = ...) -> None:
+        if self.po_number == "":
+            while True:
+                x = 0
+                code = ucg.generate(x, max_length=15, random_chars= 4)
+                try:
+                    Vendor.objects.get(vender_code = code)
+                    x += 1
+                except Exception as e:
+                    self.po_number = code
+                    break
+        return super().save()
 
 class HistoricalPerformance(models.Model):
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE)

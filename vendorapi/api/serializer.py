@@ -5,7 +5,7 @@ from .models import Vendor, HistoricalPerformance, PurchaseOrder
 class VendorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Vendor
-        exclude = ['id']
+        fields = '__all__'
         read_only_field = ['vendor_code']
 
 
