@@ -1,0 +1,11 @@
+from django.urls import path, include
+from . import views 
+
+urlpatterns = [
+    path('students/',  views.StudentListView.as_view()),
+    path('students/',  views.StudentCreateView.as_view()),
+    path('students/<int:pk>/',  views.StudentDetailView.as_view()),
+    path('students/<int:pk>/',  views.StudentUpdateView.as_view()),
+    path('students/<int:pk>/',  views.StudentDestroyView.as_view()),
+    path('v2/',  include('v2.urls')),
+]
