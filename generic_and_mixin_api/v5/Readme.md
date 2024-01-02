@@ -1,4 +1,4 @@
-# This app has implementation of Viewset class in which following method we have to define following methods
+# This app has implementation of ModelViewset class in which following method we have
 
 ### list - handle `get` method to list all
 
@@ -13,12 +13,15 @@
 ### destroy - handle `delete` method
 
 
+##### No need to define above methods they are already defined
+
+
 
 ## DefaultRouter class handel all the urls according to request
 
 ```
 router = DefaulRouter()
-routewr.register("student", views.StudentViewSet, basname="student")
+routewr.register("student", views.StudentModelViewSet, basname="student")
 ```
 
 
