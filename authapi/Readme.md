@@ -16,10 +16,10 @@
 
 ### Permission Classes in `rest_framework.permissions`
 
-###### AllowAny
+###### AllowAny    - any one can access API
 
-###### IsAuthenticated
+###### IsAuthenticated    - only authenticated user can access
 
-###### IsAdminUser
+###### IsAdminUser    - only staff member can access the API (isstaff is True)
 
 ###### IsAuthenticatedOrReadOnly
