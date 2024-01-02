@@ -8,4 +8,6 @@ urlpatterns = [
     path('students/<int:pk>/',  views.StudentUpdateView.as_view()),
     path('students/<int:pk>/',  views.StudentDestroyView.as_view()),
     path('v2/',  include('v2.urls')),
+    path('v3/',  include('v3.urls')),
+    path('v4/',  include('v4.urls')),
 ]
