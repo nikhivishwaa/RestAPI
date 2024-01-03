@@ -8,7 +8,5 @@ router.register('students', views.StudentViewSet, basename="students")
 
 urlpatterns = [
     path('',  include(router.urls)),
-    path('v1/',  include('v1.urls')),
-    path('v2/',  include('v2.urls')),
-    path('v3/',  include('v3.urls')),
+    path("auth/", include('rest_framework.urls'))
 ]
