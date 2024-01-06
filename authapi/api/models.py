@@ -1,4 +1,5 @@
 from django.db import models
+from v6.signals import create_auth_token
 
 
 class Student(models.Model):

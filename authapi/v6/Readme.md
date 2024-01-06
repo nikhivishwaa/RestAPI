@@ -14,6 +14,8 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
 ```
+###### You have to note that above code must be included in models.py file
+
 
 ###### GET request by httpie
 ```
