@@ -15,7 +15,7 @@ http flag METHOD URL [list[list]]
 ```
 
 ```
-http 'http://127.0.0.1:8000/api/v1/students/' 'Authentication:Token YOUR_TOKEN_HERE'
+http http://127.0.0.1:8000/api/v6/students/ 'Authorization:Token YOUR_TOKEN_HERE'
 ```
 
 
