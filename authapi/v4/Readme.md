@@ -7,9 +7,15 @@
 'rest_framework.authtoken'
 ```
 
-###### To test the Token Authenticaton we need CLI tools such as curl, http
+###### To test the Token Authenticaton we need CLI tools such as curl, httpie
+
+###### httpie request format
 ```
-http 'http://127.0.0.1:8000/api/v1/students' authentication:'Token YOUR_TOKEN_HERE'
+http flag METHOD URL [list[list]]
+```
+
+```
+http 'http://127.0.0.1:8000/api/v1/students/' 'Authentication:Token YOUR_TOKEN_HERE'
 ```
 
 

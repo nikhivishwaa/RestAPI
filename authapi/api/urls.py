@@ -13,4 +13,5 @@ urlpatterns = [
     path('v3/',  include('v3.urls')),
     path('v4/',  include('v4.urls')),
     path('v5/',  include('v5.urls')),
+    path('v6/',  include('v6.urls')),
 ]
