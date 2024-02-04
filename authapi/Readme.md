@@ -28,6 +28,6 @@
 
 ###### DjangoModelPermissionsOrAnonReadOnly    - same as DjangoModelPermissions but have read only access to unauthenticated user
 
-###### DjangoObjectPermissions     - objeact level permission for different models
+###### DjangoObjectPermissions     - object level permission for different models
 
 ###### Custom Permissions    - create own permission class as per the need
